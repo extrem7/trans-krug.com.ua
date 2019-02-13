@@ -1,0 +1,30 @@
+.news {
+  .news-item {
+    margin-bottom: rem(30px);
+    .news-header {
+      margin: 0.5rem 0;
+    }
+    .title-second {
+      margin-top: 0.5rem;
+    }
+    .news-date,
+    .news-anons {
+      font-weight: 300;
+      font-size: 1rem;
+      color: #000;
+    }
+    .news-banner {
+      height: 200px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .news {
+    .news-item {
+      margin-bottom: 1rem;
+    }
+  }
+}

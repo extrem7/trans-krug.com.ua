@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'TornadoCyr';
+  src: url('../fonts/TornadoCyr-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Elephant';
+  src: url('../fonts/elepht.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Franklin';
+  src: url('../fonts/franklin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TornadoCyr';
+  src: url('../fonts/TornadoCyr-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TornadoCyr';
+  src: url('../fonts/TornadoCyr-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TornadoCyr';
+  src: url('../fonts/TornadoCyr-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TornadoCyr';
+  src: url('../fonts/TornadoCyr-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TornadoCyr';
+  src: url('../fonts/TornadoCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+body, html {
+  height: 100%;
+}
+body {
+  font-family: 'TornadoCyr', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+body:not(.home) {
+  padding-top: 115px;
+}
+@media (max-width: 1200px) {
+  body:not(.home) {
+    padding-top: 83px;
+  }
+}
+@media (max-width: 992px) {
+  body:not(.home) {
+    padding-top: 56px;
+  }
+}

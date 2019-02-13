@@ -1,0 +1,1 @@
+<? locate_template( 'single-gallery.php', true );

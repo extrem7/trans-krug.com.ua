@@ -1,0 +1,10 @@
+.error-page {
+  color: #000;
+  font-weight: 500;
+  .title-main {
+    font-size: 4.5rem;
+  }
+  a {
+    color: $link-color;
+  }
+}

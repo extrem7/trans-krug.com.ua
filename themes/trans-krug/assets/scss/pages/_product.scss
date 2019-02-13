@@ -1,0 +1,43 @@
+@media (max-width: 767px) {
+  .product-content {
+    .row {
+      flex-wrap: wrap-reverse;
+    }
+    img {
+      margin-top: 10px;
+    }
+    .title-second {
+      text-align: center;
+    }
+  }
+}
+.last-works {
+  padding: 3rem 0 2.5rem 0;
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 20px;
+  }
+  .card-photo-gallery {
+    margin-bottom: 0;
+    i {
+      color: #fff;
+      padding-right: 5px;
+    }
+    &:hover {
+      i {
+        color: #fff;
+      }
+    }
+  }
+  .gallery-filter {
+    a {
+      color: #fff;
+      &.active {
+        border-color: #fff;
+      }
+    }
+  }
+  .sub-title,
+  .title-second {
+    color: #fff;
+  }
+}

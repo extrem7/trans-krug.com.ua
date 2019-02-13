@@ -1,0 +1,16 @@
+.garanty-item {
+  img {
+    margin-right: rem(28px);
+  }
+  &+.garanty-item {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .garanty-item {
+    flex-direction: column;
+    img {
+      margin: 0 0 1rem 0;
+    }
+  }
+}

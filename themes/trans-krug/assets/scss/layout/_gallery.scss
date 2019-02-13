@@ -1,0 +1,126 @@
+.gallery-photo-carousel.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0;
+}
+.card-gallery {
+  .card-banner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
+  }
+  .title-second {
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    line-height: 1;
+  }
+  .sub-title {
+    line-height: 1.2;
+  }
+  &:hover {
+    .card-banner {
+      transform: scale(1.1);
+    }
+  }
+}
+.card-photo-gallery {
+  margin-bottom: rem(50px);
+  .card-photo-banner {
+    height: 186px;
+    position: relative;
+    overflow: hidden;
+  }
+  i {
+    transition: color .4s ease-in-out, transform .4s ease-in-out;
+    font-size: rem(14px);
+    color: #000;
+  }
+  .card-photo-counter {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    z-index: 10;
+    min-width: 34px;
+    max-width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    font-size: rem(14px);
+    color: #000;
+  }
+  &:hover {
+    i {
+      color: $blue-light;
+      transform: rotate(-90deg);
+    }
+  }
+}
+.card-video-gallery {
+  margin-bottom: rem(25px);
+  .video-icon {
+    i {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 48px;
+      height: 48px;
+      display: block;
+      font-size: rem(48px);
+      color: #fff;
+      transition: transform .6s ease-in-out;
+    }
+  }
+  .card-video-banner {
+    height: 396px;
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      background: #000;
+      opacity: 0.5;
+      height: 100%;
+      width: 100%;
+    }
+    .video-banner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
+    }
+  }
+  &:hover {
+    .video-icon {
+      i {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .card-video-gallery {
+    .card-video-banner {
+      height: 250px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .card-photo-gallery {
+    margin-bottom: 2rem;
+  }
+}
